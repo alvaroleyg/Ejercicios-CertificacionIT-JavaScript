@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario: Enviar con GET y POST</title>
+</head>
+<body>
+    <h2>Formulario de Entrada</h2>
+    
+    <!-- Enviar formulario con método GET -->
+    <h3>Formulario con método GET</h3>
+    <form action="https://httpbin.org/get" method="GET">
+        <label for="nombreGET">Nombre:</label>
+        <input type="text" id="nombreGET" name="nombre">
+        <button type="submit">Enviar con GET</button>
+    </form>
+    <p>Explicación: En este formulario, los datos del formulario se envían utilizando el método GET. El valor del campo "nombre" será enviado como parte de la URL a la dirección especificada en el atributo action del formulario.</p>
+    
+    <br><br>
+
+    <!-- Enviar formulario con método POST -->
+    <h3>Formulario con método POST</h3>
+    <form action="https://httpbin.org/post" method="POST">
+        <label for="nombrePOST">Nombre:</label>
+        <input type="text" id="nombrePOST" name="nombre">
+        <button type="submit">Enviar con POST</button>
+    </form>
+    <p>Explicación: En este formulario, los datos se envían usando el método POST. A diferencia de GET, los datos se envían en el cuerpo de la solicitud y no en la URL.</p>
+
+</body>
+</html>

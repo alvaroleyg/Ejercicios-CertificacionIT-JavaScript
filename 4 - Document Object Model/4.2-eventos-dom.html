@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pruebas de Eventos</title>
+</head>
+<body>
+    <h1>Pruebas de Eventos en JavaScript</h1>
+
+    <!-- onload -->
+    <p>El evento <strong>onload</strong> será probado al cargar esta página. Mira la consola del navegador.</p>
+
+    <!-- onfocus y onblur -->
+    <label for="campoTexto">Prueba onfocus y onblur:</label>
+    <input type="text" id="campoTexto" placeholder="Escribe algo aquí">
+    <br><br>
+
+    <!-- onchange -->
+    <label for="miSelect">Prueba onchange:</label>
+    <select id="miSelect">
+        <option value="">Selecciona una opción</option>
+        <option value="opcion1">Opción 1</option>
+        <option value="opcion2">Opción 2</option>
+    </select>
+    <br><br>
+
+    <!-- onkeydown, onkeyup, onkeypress -->
+    <label for="teclas">Prueba onkeydown, onkeyup, y onkeypress:</label>
+    <input type="text" id="teclas" placeholder="Escribe algo">
+    <br><br>
+
+    <!-- onclick -->
+    <button id="boton">Prueba onclick</button>
+    <br><br>
+
+    <!-- onmouseover y onmouseout -->
+    <div id="area" style="width: 200px; height: 100px; background-color: lightblue; text-align: center; line-height: 100px;">
+        Pasa el ratón por aquí
+    </div>
+
+    <script src="./4.2-eventos-dom.js"></script>
+</body>
+</html>

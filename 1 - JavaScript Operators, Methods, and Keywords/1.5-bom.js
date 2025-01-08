@@ -1,4 +1,6 @@
 // Completar y depurar código que interactúa con el Modelo de Objetos del Navegador (BOM)
+
+// Mostrar el tamaño de la pantalla
 function showScreenSize() {
     let ancho = window.innerWidth
     let alto = window.innerHeight
@@ -6,6 +8,11 @@ function showScreenSize() {
     alert(`El tamaño de la pantalla es de ${ancho}px de ancho por ${alto}px de alto`)
 }
 
+showScreenSize()
+
+
+
+// Mostrar un mensaje de confirmación
 function confirmClosure() {
     let respuesta = confirm("Estás seguro de que deseas salir?")
 
@@ -16,6 +23,11 @@ function confirmClosure() {
     }
 }
 
+confirmClosure()
+
+
+
+// Solicitar el nombre del usuario
 function requestName() {
     let nombre = ""
 
@@ -30,6 +42,4 @@ function requestName() {
     alert(`Hola, ${nombre}!`);
 }
 
-showScreenSize()
-confirmClosure()
 requestName()

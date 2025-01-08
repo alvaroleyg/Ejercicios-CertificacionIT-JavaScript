@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Salida a documento HTML</title>
+</head>
+<script>
+    document.write("<h1>Bienvenido al documento</h1>")
+    document.write("<p>Este texto fue añadido usando document.write.</p>")
+</script>
+<body>
+    <h1 id="titulo">Título original</h1>
+    <button onclick="cambiarTitulo()">Cambiar Título</button>
+
+    <p id="mensaje">Este es el mensaje original.</p>
+    <button onclick="actualizarMensaje()">Actualizar Mensaje</button>
+
+    <script>
+        function cambiarTitulo() {
+            document.getElementById("titulo").innerHTML = "¡Nuevo título generado con innerHTML!"
+        }
+
+        function actualizarMensaje() {
+            document.getElementById("mensaje").textContent = "Mensaje actualizado usando textContent."
+        }
+    </script>
+</body>
+</html>

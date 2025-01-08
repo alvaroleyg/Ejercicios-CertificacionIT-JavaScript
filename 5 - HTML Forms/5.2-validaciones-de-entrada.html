@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario: Validación de Campo y Número</title>
+</head>
+<body>
+    <h2>Formulario de Entrada</h2>
+    <form id="miFormulario" onsubmit="return validarFormulario()">
+        <!-- Validación de nombre -->
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre">
+        <br><br>
+
+        <!-- Validación de edad -->
+        <label for="edad">Edad:</label>
+        <input type="text" id="edad" name="edad">
+        <br><br>
+
+        <button type="submit">Enviar</button>
+    </form>
+    <p id="resultado"></p>
+
+    <script>
+        function validarFormulario() {
+            // Validación del campo nombre
+            var nombre = document.getElementById("nombre").value;
+            if (nombre === "") {
+                document.getElementById("resultado").textContent = "El nombre no puede estar vacío.";
+                return false;  // Evita que el formulario se envíe
+            }
+
+            // Validación del campo edad
+            var edad = document.getElementById("edad").value;
+            if (isNaN(edad) || edad === "") {
+                document.getElementById("resultado").textContent = "Por favor, ingresa un número válido para la edad.";
+                return false;  // Evita que el formulario se envíe
+            }
+
+            // Si ambas validaciones son correctas
+            document.getElementById("resultado").textContent = "Formulario enviado con éxito.";
+            return true; // El formulario se envía si ambas validaciones pasan
+        }
+    </script>
+</body>
+</html>

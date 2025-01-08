@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos con addEventListener y de teclado</title>
+</head>
+<body>
+    <button id="miBoton">Haz clic aquí</button>
+    <p id="mensaje">Texto inicial</p>
+
+    <input type="text" id="entrada" placeholder="Escribe algo..." />
+    <p id="salida"></p>
+
+    <script>
+        document.getElementById("miBoton").addEventListener("click", function () {
+            document.getElementById("mensaje").textContent = "¡Botón clickeado!"
+        })
+
+        document.getElementById("entrada").addEventListener("keydown", function (evento) {
+            document.getElementById("salida").textContent = `Tecla presionada: ${evento.key}`
+        })
+    </script>
+</body>
+</html>

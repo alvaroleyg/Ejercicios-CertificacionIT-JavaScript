@@ -6,7 +6,7 @@ function areaRectangulo (base, altura) {
         return
     }
 
-    let area = base * altura;
+    let area = base * altura
 
     debugger
     console.log('La base del rectángulo es:', base)

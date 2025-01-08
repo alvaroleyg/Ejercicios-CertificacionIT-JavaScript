@@ -21,5 +21,4 @@ function mostrarTiposDeDatos() {
     console.log("Número como texto (formateado):", numeroComoTexto, "Tipo:", typeof numeroComoTexto)
 }
 
-// Llamar a la función para probar
 mostrarTiposDeDatos()

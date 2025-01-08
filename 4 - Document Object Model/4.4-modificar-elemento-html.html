@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modificar y añadir elementos</title>
+</head>
+<body>
+    <div id="contenedor">Texto original</div>
+    <button onclick="modificarTexto()">Modificar Texto</button>
+
+    <ul id="lista">
+        <li>Elemento 1</li>
+        <li>Elemento 2</li>
+    </ul>
+    <button onclick="agregarElemento()">Agregar Elemento</button>
+
+
+    <script>
+        function modificarTexto() {
+            let elemento = document.getElementById("contenedor")
+            elemento.textContent = "Texto modificado."
+        }
+
+        function agregarElemento() {
+            let lista = document.getElementById("lista")
+            let nuevoElemento = document.createElement("li")
+            nuevoElemento.textContent = "Elemento añadido"
+            lista.appendChild(nuevoElemento)
+        }
+    </script>
+</body>
+</html>
